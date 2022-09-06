@@ -1,0 +1,70 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--Light-gray);
+}
+
+.componentWrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background-color: var(--White);
+  height: 530px;
+  width: 340px;
+  padding: 16px;
+  border-radius: 20px;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+.imgWrapper {
+  width: 100%;
+  margin-top: -20px;
+}
+
+.qrCodeImage {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.cardTextWrapper {
+  margin-top: -30px;
+  width: 90%;
+}
+
+.cardTitle {
+  color: var(--Dark-blue);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.cardInstruction {
+  color: var(--Grayish-blue);
+  margin-top: 16px;
+  font-size: 1rem;
+}
